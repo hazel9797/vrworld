@@ -15,34 +15,45 @@
       <a-entity position="0 1.6 0" camera wasd-controls="acceleration: 15;" look-controls="pointerLockEnabled: false">
         <a-cursor position="0 0 -.05" scale=".04 .04 1"></a-cursor>
         <!--For Collision Detection-->
-        <a-cylinder radius="0.75"></a-cylinder>
+        <!-- <a-cylinder radius="0.75"></a-cylinder> -->
       </a-entity>
 
       <!--Portal-->
-      <!-- <a-entity position="-3 0 -6" web-portal="url:https://aframe.io; text:Aframe;"></a-entity> -->
-      <a-entity position="0 0 -6" web-portal="url:https://hazel9797.github.io/vrspace/; text:VR World;"></a-entity>
-
+      <!-- <a-entity position="-3 0 -6" web-portal="url:https://hazel9797.git hub.io/vrspace/; text:VR World;"></a-entity> -->
+      <a-entity position="30.000 3.989 -27.  " rotation="0 -90 0" scale="2.910 3.680 1.660  " web-portal="url:https://hazel9797.github.io/vrspace/; text:VR World;"></a-entity>
+      <a-entity position="33.236 2.789 12.827 " rotation="0 -90 0" scale="2.910 3.680 1.660  " web-portal="url:https://hazel9797.github.io/test/;  text:Shapes World;"></a-entity>
+      <a-entity position="34.335  4.688  25.120 " rotation="0 -90 0" scale="2.910 3.680 1.660  " web-portal="url:https://hazel9797.github.io/videoworld/ ;  text:video World;"></a-entity>
+      <!-- <a-entity position="0 0 -6" position="23.282 6.154 -5.969" rotation="0 90 0 "web-portal="url:https://hazel9797.github.io/vrspace/; text:VR World;"></a-entity> -->
+ 
       <!--Environment-->
       <a-sky color="white"></a-sky>
       <!-- images -->
-      <a-image position="-8 2.5 -8" width="6" height="5" src="image/_DSC1670.jpg"></a-image>
+      <a-image position="23.282 6.154 -5.969" rotation="0 90 0 " width="6" height="5" src="image/_DSC1670.jpg"></a-image>
+      <a-image position="25.106 6.154 2.035" rotation="0 90 0 " width="6" height="5" src="image/sea.jpg"></a-image>
+      <a-image position="23.464 6.154 -14.616 " rotation="0 90 0 " width="6" height="5" src="image/street.jpg"></a-image>
+      <!-- <a-image position="23.282 6.154 -5.969" rotation="0 90 0 " width="6" height="5" src="image/_DSC1670.jpg"></a-image>
+      <a-image position="23.282 6.154 -5.969" rotation="0 90 0 " width="6" height="5" src="image/_DSC1670.jpg"></a-image> -->
       <!-- <a-image position="8 2.5 -8" width="6" height="5" src="image/img.jpg"></a-image> -->
+      
+      
+      <!-- audio -->
+      <a-sound src="audio/90. Exciting.mp3" volume="1" autoplay="true" position="0 2 5"></a-sound>
       <!-- gltf -->
       <a-assets>
       <a-asset-item id="moon" src="3d/3d/scene.gltf"></a-asset-item>
-      <a-asset-item id="cloud" src="cloud/scene.gltf"></a-asset-item>
+      <!-- <a-asset-item id="cloud" src="cloud/scene.gltf"></a-asset-item> -->
 
-      <img id="my-texture" src="image/equirectangular.jpeg">
-      </a-assets>
+      <img id="skytexture" src="image/room4.jpg">
+      </a-assets>         
 
-      <a-entity position="8 2.5 -8" gltf-model="#moon"></a-entity>
+      <a-entity position="-21.503 2.578 -0.310  " scale="5 5 5" gltf-model="#moon"></a-entity>
     
-        <a-entity position="3 2.5 -8" gltf-model="#cloud" animation-mixer></a-entity>
+        <!--   -->
 
-
+       
         <!-- <a-curvedimage src="#my-texture" height="10.0" radius="12" theta-length="120"
         rotation="0 100 0" scale="1 1 1"></a-curvedimage> -->
-        <a-sky src="#my-texture"></a-sky>
+        <a-sky src="#skytexture"></a-sky>
 
 
         <!-- <a-plane rotation="-90 0 0" width="16" height="16" color="#3fa841"></a-plane>
