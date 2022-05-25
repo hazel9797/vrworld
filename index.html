@@ -37,18 +37,20 @@
       
       
       <!-- audio -->
-      <a-sound src="audio/90. Exciting.mp3" volume="1" autoplay="true" position="0 0 0"></a-sound>
+      <a-sound src="audio/90. Exciting.mp3" volume="0" autoplay="true" position="0 0 0"></a-sound>
       <!-- gltf -->
       <a-assets>
       <a-asset-item id="moon" src="3d/3d/scene.gltf"></a-asset-item>
       <!-- <a-asset-item id="cloud" src="cloud/scene.gltf"></a-asset-item> -->
+      <a-asset-item id="tako" src="happy_takodachi_animated/scene.gltf"></a-asset-item>
 
       <img id="skytexture" src="image/room4.jpg">
       </a-assets>         
 
       <a-entity animation="property: rotation; to: 0 -360 0; dur: 4000; easing: linear; loop: true" position="-21.503 2.578 -0.310  " scale="5 5 5" gltf-model="#moon"></a-entity>
-    
-        <!--   -->
+      <a-entity animation="property: position;from:-1 1.441 -1; to:0.2 1.6 -0.03; dur: 4000; easing: easeInElastic; loop: true;" rotation="0 60 0" scale="0.1 0.1 0.1"dur: 2000; gltf-model="#tako" animation-mixer ></a-entity>
+
+        <!-- position="0.058 1.441 -1"  -->
 
        
         <!-- <a-curvedimage src="#my-texture" height="10.0" radius="12" theta-length="120"
